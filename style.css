@@ -2,12 +2,15 @@ body {
     display:flex;
     align-content: center;
     justify-content: center;
+   font-family: 'Overpass', sans-serif;
 
 }
 h1 {
     font-size: 24px;
+font-weight: 700;
 }
 
 p{
     font-size: 15px;
+    font-weight: 400;
 }
