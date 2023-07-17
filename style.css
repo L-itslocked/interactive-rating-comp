@@ -13,7 +13,7 @@ h1 {
 }
 
 p {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: hsl(217, 12%, 63%);
 }
@@ -66,3 +66,11 @@ button:hover {
   cursor: pointer;
 }
 /* figure out how to make previous hover gray */
+#thank-you-state {
+  text-align: center;
+}
+@media (width: 1440px) {
+  p {
+    font-size: 15px;
+  }
+}
