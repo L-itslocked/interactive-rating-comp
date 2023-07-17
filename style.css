@@ -1,16 +1,23 @@
 body {
-    display:flex;
-    align-content: center;
-    justify-content: center;
-   font-family: 'Overpass', sans-serif;
-
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  font-family: "Overpass", sans-serif;
+  background-color: black;
 }
 h1 {
-    font-size: 24px;
-font-weight: 700;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
 }
 
-p{
-    font-size: 15px;
-    font-weight: 400;
+p {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217, 12%, 63%);
+}
+button {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  text-transform: uppercase;
 }
