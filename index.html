@@ -21,16 +21,23 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        color: hsl(217, 12%, 64%);
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: #fff;
+        text-decoration: none;
+      }
+      .attribution a:hover {
+        color: hsl(25, 97%, 53%);
       }
     </style>
   </head>
   <body>
     <!-- Rating state start -->
     <div class="container" id="rating-state">
-      <img src="images/icon-star.svg" />
+      <div class="star-circle">
+        <img src="images/icon-star.svg" />
+      </div>
       <h1>How did we do?</h1>
       <p>
         Please let us know how we did with your support request. All feedback is
