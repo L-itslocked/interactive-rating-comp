@@ -18,13 +18,23 @@ p {
   font-weight: 400;
   color: hsl(217, 12%, 63%);
 }
+p.user-result {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 22.5px;
+  padding: 5px 12px;
+  margin: 24px 49px;
+}
+p.thanks-result {
+  margin: 0 24px 37px;
+}
 .container {
   background-color: hsl(216, 12%, 8%);
   border-radius: 15px;
   /* background: hsl(215, 20%, 17%); */
-  background-color: radial-gradient(
+  background: radial-gradient(
     circle,
-    hsl(215, 20%, 17%) 10%,
+    hsl(215, 20%, 17%) 0%,
     hsl(216, 24%, 12%) 100%
   );
   padding: 24px;
@@ -43,10 +53,12 @@ p {
 .star-circle {
   height: 40px;
   width: 40px;
+  margin-bottom: 16px;
 }
 .circle {
   height: 42px;
   width: 42px;
+  margin: 24px 17px 16px 0;
 }
 .circle:hover {
   background-color: hsl(25, 97%, 53%);
@@ -54,6 +66,10 @@ p {
   cursor: pointer;
 }
 /* figure out how to make previous hover gray */
+#scoring-row {
+  display: inline-flex;
+}
+
 #button {
   background-color: hsl(25, 97%, 53%);
   color: #fff;
@@ -63,6 +79,7 @@ p {
   flex-shrink: 0;
   padding: 12px;
   width: 90%;
+  margin: 24px 0 32px;
 }
 #button:hover {
   background-color: #fff;
@@ -72,8 +89,37 @@ p {
 #thank-you-state {
   text-align: center;
 }
+#thanks-img {
+  margin-top: 34px;
+}
 @media (width: 1440px) {
+  h1 {
+    font-size: 28px;
+    margin: 30px 0 7px;
+  }
   p {
     font-size: 15px;
+  }
+  p.rating-info {
+    margin-right: 50px;
+  }
+  .container {
+    margin: 25vh auto;
+    padding: 32px;
+    width: 412px;
+    height: auto;
+  }
+
+  .star-circle {
+    width: 48px;
+    height: 48px;
+  }
+  .circle {
+    margin: 24px 16px 32px;
+    width: 51px;
+    height: 51px;
+  }
+  #button {
+    margin: 0 auto;
   }
 }
