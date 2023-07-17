@@ -1,10 +1,10 @@
 body {
-  margin: 20%;
-  /* display: flex;
-  align-content: center;
-  justify-content: center; */
+  margin: 6%;
   font-family: "Overpass", sans-serif;
   background-color: black;
+  /* display: block;
+  align-content: center;
+  justify-content: center; */
 }
 h1 {
   font-size: 24px;
@@ -17,21 +17,6 @@ p {
   font-weight: 400;
   color: hsl(217, 12%, 63%);
 }
-button {
-  background-color: hsl(25, 97%, 53%);
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 22.5px;
-  flex-shrink: 0;
-  padding: 12px;
-  width: 100%;
-}
-button:hover {
-  background-color: #fff;
-  color: hsl(25, 97%, 53%);
-  cursor: pointer;
-}
 .container {
   background-color: hsl(216, 12%, 8%);
   border-radius: 15px;
@@ -42,6 +27,7 @@ button:hover {
     hsl(216, 24%, 12%) 100%
   );
   padding: 24px;
+  width: 279px;
 }
 .star-circle,
 .circle {
@@ -66,6 +52,21 @@ button:hover {
   cursor: pointer;
 }
 /* figure out how to make previous hover gray */
+#button {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 22.5px;
+  flex-shrink: 0;
+  padding: 12px;
+  width: 100%;
+}
+#button:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
 #thank-you-state {
   text-align: center;
 }
