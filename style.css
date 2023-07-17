@@ -1,5 +1,6 @@
 body {
-  margin: 6%;
+  margin: 0;
+  padding: 0;
   font-family: "Overpass", sans-serif;
   background-color: black;
   /* display: block;
@@ -28,6 +29,7 @@ p {
   );
   padding: 24px;
   width: 279px;
+  margin: 25px;
 }
 .star-circle,
 .circle {
@@ -60,7 +62,7 @@ p {
   border-radius: 22.5px;
   flex-shrink: 0;
   padding: 12px;
-  width: 100%;
+  width: 90%;
 }
 #button:hover {
   background-color: #fff;
