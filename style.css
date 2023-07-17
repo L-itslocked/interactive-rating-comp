@@ -21,3 +21,20 @@ button {
   color: #fff;
   text-transform: uppercase;
 }
+.star-circle,
+.circle {
+  border-radius: 50%;
+  background-color: hsl(213, 20%, 18%);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.star-circle {
+  height: 40px;
+  width: 40px;
+}
+.circle {
+  height: 42px;
+  width: 42px;
+}
