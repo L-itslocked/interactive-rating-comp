@@ -1,7 +1,8 @@
 body {
-  display: flex;
+  margin: 20%;
+  /* display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: center; */
   font-family: "Overpass", sans-serif;
   background-color: black;
 }
@@ -20,6 +21,16 @@ button {
   background-color: hsl(25, 97%, 53%);
   color: #fff;
   text-transform: uppercase;
+  text-align: center;
+  border-radius: 22.5px;
+  flex-shrink: 0;
+  padding: 12px;
+  width: 100%;
+}
+button:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
 }
 .container {
   background-color: hsl(216, 12%, 8%);
@@ -49,3 +60,9 @@ button {
   height: 42px;
   width: 42px;
 }
+.circle:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  cursor: pointer;
+}
+/* figure out how to make previous hover gray */
