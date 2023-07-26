@@ -1,11 +1,13 @@
 body {
-  margin: 0;
-  padding: 0;
+  margin: 24px;
+  /* padding: 0; */
   font-family: "Overpass", sans-serif;
   background-color: black;
-  /* display: block;
-  align-content: center;
-  justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 h1 {
   font-size: 24px;
@@ -45,10 +47,12 @@ p.thanks-result {
 .circle {
   border-radius: 50%;
   background-color: hsl(213, 20%, 18%);
+
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .star-circle {
   height: 40px;
@@ -64,12 +68,21 @@ p.thanks-result {
   background-color: hsl(25, 97%, 53%);
   cursor: pointer;
 }
-.circle:hover p {
+.circle:hover p,
+.circle:focus p {
   color: #fff;
 }
 
 .circle:focus {
   background-color: hsl(217, 12%, 63%);
+  color: #fff;
+}
+.circle:focus:after {
+  color: #fff;
+}
+
+.hidden {
+  display:none;
 }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
 /* figure out how to make previous hover gray */
