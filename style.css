@@ -62,9 +62,16 @@ p.thanks-result {
 }
 .circle:hover {
   background-color: hsl(25, 97%, 53%);
-  color: #fff;
   cursor: pointer;
 }
+.circle:hover p {
+  color: #fff;
+}
+
+.circle:focus {
+  background-color: hsl(217, 12%, 63%);
+}
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
 /* figure out how to make previous hover gray */
 #scoring-row {
   display: inline-flex;
