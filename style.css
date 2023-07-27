@@ -71,17 +71,15 @@ label {
 
 label:hover {
   background-color: hsl(25, 97%, 53%);
+  color: #fff;
   cursor: pointer;
 }
 
-label:hover,
-label:focus {
-  color: #fff;
-}
-label:focus,
-input:focus {
+input:selected + .radio-tile label {
   background-color: hsl(217, 12%, 63%);
+  color: green;
 }
+
 /* focus isn't working atm */
 
 .container {
@@ -108,9 +106,6 @@ input:focus {
 }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
 /* figure out how to make previous hover gray */
-#scoring-row {
-  display: inline-flex;
-}
 
 #thank-you-state {
   text-align: center;
