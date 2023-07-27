@@ -44,10 +44,9 @@ p.thanks-result {
   margin: 25px;
 }
 .star-circle,
-.circle {
+label {
   border-radius: 50%;
   background-color: hsl(213, 20%, 18%);
-
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -59,30 +58,35 @@ p.thanks-result {
   width: 40px;
   margin-bottom: 16px;
 }
-.circle {
+input {
+  display: none;
+}
+label {
+  display: inline-flex;
+  flex-direction: horizontal;
   height: 42px;
   width: 42px;
-  margin: 24px 17px 16px 0;
+  margin-right: 10px;
+  color: hsl(216, 12%, 54%);
 }
-.circle:hover {
+
+label:hover {
   background-color: hsl(25, 97%, 53%);
   cursor: pointer;
 }
-.circle:hover p,
-.circle:focus p {
-  color: #fff;
-}
 
-.circle:focus {
+label:hover,
+label:focus {
+  color: #fff;
+}
+label:focus,
+input:focus {
   background-color: hsl(217, 12%, 63%);
-  color: #fff;
 }
-.circle:focus:after {
-  color: #fff;
-}
+/* focus isn't working atm */
 
 .hidden {
-  display:none;
+  display: none;
 }
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/:active */
 /* figure out how to make previous hover gray */
@@ -134,7 +138,7 @@ p.thanks-result {
     width: 48px;
     height: 48px;
   }
-  .circle {
+  label {
     margin: 24px 16px 32px;
     width: 51px;
     height: 51px;
